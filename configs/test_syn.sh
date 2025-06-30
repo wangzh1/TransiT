@@ -1,0 +1,21 @@
+accelerate launch test_imaging_imaging_v4_syn.py \
+     --resume '/home/user/NLOS-Video/logs/imaging_imaging_v4/ckpt_best.pt' \
+     --epochs 1000 \
+     --num_workers 0 \
+     --warmup_epochs 2\
+     --min_lr 1e-4 \
+     --lr 1e-3 \
+     --batch_size 1 \
+     --crop_hist true \
+     --crop_hist_start 100 \
+     --crop_hist_end 1000 \
+     --histogram_length 900 \
+     --embed_dim 64 \
+     --depth 8 \
+     --num_heads 16 \
+     --downsample 0 \
+     --downsample_spatial 4 \
+     --save_freq 100 \
+     --output_dir './logs/video_R5' \
+     --log_dir './logs/video_R5' \
+     --data_path '/home/user/NLOS-Video/sim_results/video'

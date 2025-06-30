@@ -1,0 +1,21 @@
+accelerate launch train.py \
+     --epochs 1000 \
+     --num_workers 0 \
+     --warmup_epochs 2\
+     --min_lr 1e-4 \
+     --lr 1e-3 \
+     --batch_size 6 \
+     --crop_hist true \
+     --crop_hist_start 100 \
+     --crop_hist_end 1000 \
+     --histogram_length 900 \
+     --downsample 2 \
+     --embed_dim 32 \
+     --depth 2 \
+     --num_heads 16 \
+     --downsample 0 \
+     --downsample_spatial 4 \
+     --save_freq 100 \
+     --output_dir './logs/pretrain_imaging_imaging_v7' \
+     --log_dir './logs/pretrain_imaging_imaging_v7' \
+     --data_path '/data2/NLOSVideo'
