@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TransiT</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">TransiT: Transient Transformer for Non-line-of-sight Videography</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Ruiqian Li*, Siyuan Shen*, Ziheng Wang*, Suan Xia, Xingyue Peng, Chengxuan Song, Yingsheng Zhu, Tao Wu, Shiying Li†, Jingyi Yu†
+              </span>
+
+              <div class="is-size-6 publication-links">
+                <span class="link-block">
+                  <a href="https://github.com/q9d8t7f8/Transit" target="_blank">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                </span>
+                &nbsp;|&nbsp;
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/alanzw8/TransVerse/tree/main" target="_blank">
+                    <i class="fas fa-database"></i> Dataset
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <div style="display: flex; justify-content: center; width: 100%;">
+              <video width="auto" height="auto" controls>
+                <source src="static/videos/video.mp4" type="video/mp4">
+              </video>
+            </div>
+            <p>
+              <br>
+              High quality and high speed videography using Non-Line-of-Sight (NLOS) imaging benefit autonomous navigation, collision prevention, and post-disaster search and rescue tasks. Current solutions have to balance between the frame rate and image quality. High frame rates, for example, can be achieved by reducing either per-point scanning time or scanning density, but at the cost of lowering the information density at individual frames. Fast scanning process further reduces the signal-to-noise ratio and different scanning systems exhibit different distortion characteristics. In this work, we design and employ a new Transient Transformer architecture called TransiT to achieve real-time NLOS recovery under fast scans. TransiT directly compresses the temporal dimension of input transients to extract features, reducing computation costs and meeting high frame rate requirements. It further adopts a feature fusion mechanism as well as employs a spatial-temporal Transformer to help capture features of NLOS transient videos. Moreover, TransiT applies transfer learning to bridge the gap between synthetic and real-measured data. In real experiments, TransiT manages to reconstruct from sparse transients of 16x16 measured at an exposure time of 0.4 ms per point to NLOS videos at a 64x64 resolution at 10 frames per second. We will make our code and dataset available to the community.
+              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- DO NOT DELETE!!! -->
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the Academic Project Page Template. You are free to use this template for your academic presentations and projects. Please link back to this page if you use its design or code.
+              <br> This website is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
